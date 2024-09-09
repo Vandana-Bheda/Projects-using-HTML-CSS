@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <style>
+        .bodyscroll::-webkit-scrollbar {
+            display: none;
+        }
+
+        .gallary::-webkit-scrollbar {
+            display: none;
+        }
+
+        .overflowx {
+            overflow: scroll;
+            scrollbar-width: none;
+        }
+
+        .hero {
+            background-image: url(assets/hero_image.jpg);
+            background-size: cover;
+            height: 350px;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body class="bodyscroll w-full">
+    <nav class="w-full">
+        <!-- nav1 -->
+        <div class="flex lg:h-[60px] h-[50px] bg-black items-center w-full justify-between">
+            <div class="flex py-2 px-2 items-center lg:w-[20%] w-max justify-between">
+                <i class="fa-solid fa-bars lg:hidden block text-white text-2xl"></i>
+                <img src="assets/amazon_logo.png" alt="" class="object-contain h-[60px]">
+                <div class="lg:block hidden">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-location-dot text-gray-200 px-1 mt-3"></i>
+                        <p class="flex flex-col">
+                            <span class="text-gray-200 text-xs text-nowrap">Deliver to</span>
+                            <span class="text-white font-bold text-xs">India</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:block hidden w-[50%] h-[40px]">
+                <div class="h-full flex items-center">
+                    <div class="bg-gray-200 h-full w-max rounded-s text-xs flex items-center px-2">
+                        <span class="pr-2">All</span>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                    <div class="bg-white h-full flex px-2 text-sm w-full"><span class="self-center">Search Amazon</span>
+                    </div>
+                    <div class="bg-orange-300 h-full w-max rounded-e flex items-center px-3">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:block hidden w-[30%]">
+                <div class="flex justify-around">
+                    <div class="flex items-center">
+                        <img src="assets/flag-us-svgrepo-com.svg" alt="">
+                        <span class="text-white text-sm font-bold px-1">EN</span>
+                        <span class="text-gray-200 text-[10px] pt-2"><i class="fa-solid fa-caret-down"></i></span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-white text-[12px]">Hello,sign in</span>
+                        <span class="text-white text-[13px] font-bold">Account & Lists <i
+                                class="fa-solid fa-caret-down text-[10px] text-gray-200"></i> </span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-white text-[12px]">Returns</span>
+                        <span class="text-white text-[13px] font-bold">& Orders</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-cart-arrow-down text-white text-2xl"></i>
+                        <span class="text-white font-bold text-sm">Cart</span>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:hidden block">
+                <div class="flex text-white items-center">
+                    <span class="text-xs">Sign in</span>
+                    <i class="fa-solid fa-angle-right px-1 text-[8px]"></i>
+                    <i class="fa-regular fa-user text-2xl"></i>
+                    <i class="fa-solid fa-cart-arrow-down text-white text-2xl px-4"></i>
+                </div>
+            </div>
+        </div>
+        <div class="lg:hidden block bg-black h-[50px] px-2">
+            <div class="h-[40px] flex items-center">
+                <div class="bg-white h-full flex justify-between text-sm w-full rounded ps-2">
+                    <span class="self-center">Search Amazon</span>
+                    <div class="bg-orange-300 h-full w-max rounded flex items-center px-3">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- nav2 -->
+        <div class="lg:h-[50px] h-[40px] w-full flex justify-between items-center bg-black text-white px-4 overflowx">
+            <div class="w-[40%] lg:block hidden">
+                <div class="flex text-sm items-center justify-between">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-bars text-white text-xl"></i>
+                        <span class="pl-1 font-bold">All</span>
+                    </div>
+                    <span>Today's Deal</span>
+                    <span>Customer Services</span>
+                    <span>Registry</span>
+                    <span>Gift Cards</span>
+                    <span>Sell</span>
+                </div>
+            </div>
+            <div class="lg:block hidden">
+                <div class="text-sm font-bold">
+                    <span>Shop the Gaming Store</span>
+                </div>
+            </div>
+            <div class="lg:hidden block">
+                <div class="flex text-white text-sm text-nowrap">
+                    <span class="pr-4">Deals</span>
+                    <span class="pr-4">Amaxon Basics</span>
+                    <span class="pr-4">Best Sellers</span>
+                    <span class="pr-4">Livestrams</span>
+                    <span class="pr-4">Music</span>
+                    <span class="pr-4">Video</span>
+                    <span class="pr-4">New Releases</span>
+                    <span class="pr-4">Books</span>
+                    <span class="pr-4">Home</span>
+                    <span class="pr-4">Health & Household</span>
+                    <span class="pr-4">PC</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main container -->
+    <main class="hero flex justify-center">
+        <div class="p-4 self-end w-[95%] lg:block hidden">
+            <p class="bg-white h-[40px] w-full flex items-center justify-center text-nowrap">You are on amazon.com. You can also
+                shop on Amazon India for millions of products with fast delivery. <a href="#" class="text-blue-600">
+                    &nbsp;Click here to go to amazon.in</a></p>
+        </div>
+    </main>
+    <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 p-4 bg-gray-200">
+        <div class="bg-white p-4 h-[400px]">
+            <p class="text-lg font-bold">Cloths</p>
+            <img src="assets/box1_image.jpg" alt="" class="object-cover py-4 h-[300px]">
+            <p class="text-blue-600 text-sm">Shop Now</p>
+        </div>
+        <div class="bg-white p-4">
+            <p class="text-lg font-bold">Health & Personal Care</p>
+            <img src="assets/box2_image.jpg" alt="" class="object-cover py-4 h-[300px]">
+            <p class="text-blue-600 text-sm">Shop Now</p>
+        </div>
+        <div class="bg-white p-4">
+            <p class="text-lg font-bold">Furniture</p>
+            <img src="assets/box3_image.jpg" alt="" class="object-cover py-4 h-[300px]">
+            <p class="text-blue-600 text-sm">Shop Now</p>
+        </div>
+        <div class="bg-white p-4">
+            <p class="text-lg font-bold">Electronics</p>
+            <img src="assets/box4_image.jpg" alt="" class="object-cover py-4 h-[300px]">
+            <p class="text-blue-600 text-sm">Shop Now</p>
+        </div>
+        <div class="bg-white p-4">
+            <p class="text-lg font-bold">Beauty picks</p>
+            <img src="assets/box5_image.jpg" alt="" class="object-cover py-4 h-[300px]">
+            <p class="text-blue-600 text-sm">Shop Now</p>
+        </div>
+        <div class="bg-white p-4">
+            <p class="text-lg font-bold">Pet Care</p>
+            <img src="assets/box6_image.jpg" alt="" class="object-cover py-4 h-[300px]">
+            <p class="text-blue-600 text-sm">Shop Now</p>
+        </div>
+        <div class="bg-white p-4">
+            <p class="text-lg font-bold">New Arrival in Toys</p>
+            <img src="assets/box7_image.jpg" alt="" class="object-cover py-4 h-[300px]">
+            <p class="text-blue-600 text-sm">Shop Now</p>
+        </div>
+        <div class="bg-white p-4">
+            <p class="text-lg font-bold">Discover Fashion Trends</p>
+            <img src="assets/box8_image.jpg" alt="" class="object-cover py-4 h-[300px]">
+            <p class="text-blue-600 text-sm">Shop Now</p>
+        </div>
+    </div>
+
+    <div class=" p-4 bg-gray-200 flex items-center justify-center">
+        <div class="gallary-wrap flex items-center justify-center p-4 bg-white">
+            <i class="fa-solid fa-angle-left w-[50px] cursor-pointer md:m-6 m-2" id="backbtn"></i>
+            <div class="flex overflow-x-scroll gallary">
+                <div class="grid grid-cols-3 gap-4 w-full h-auto flex-none">
+                    <img src="assets/box1_image.jpg" alt="" class="w-full h-full object-cover">
+                    <img src="assets/box2_image.jpg" alt="" class="w-full h-full object-cover">
+                    <img src="assets/box3_image.jpg" alt="" class="w-full h-full object-cover">
+                </div>
+                <div class="grid grid-cols-3 gap-4 w-full h-auto flex-none">
+                    <img src="assets/box4_image.jpg" alt="" class="w-full h-full object-cover">
+                    <img src="assets/box5_image.jpg" alt="" class="w-full h-full object-cover">
+                    <img src="assets/box6_image.jpg" alt="" class="w-full h-full object-cover">
+                </div>
+            </div>  
+            <i class="fa-solid fa-angle-right w-[50px] cursor-pointer md:m-6 m-2" id="nextbtn"></i>
+        </div>
+    </div>
+
+    <!-- footer -->
+     <footer>
+        <button onclick="backToTop()" class="bg-gray-800 text-white text-sm w-full p-4">Back To Top</button>
+        <div class="flex justify-around md:flex-row flex-col bg-gray-900 text-white py-8 px-4">
+            <ul class="flex flex-col text-sm">
+                <a href="#" class="font-bold pb-3">Get to Know Us</a>
+                <a href="#" class="pb-1">Careers</a>
+                <a href="#" class="pb-1">Blog</a>
+                <a href="#" class="pb-1">About Amazon</a>
+                <a href="#" class="pb-1">Investor Relations</a>
+                <a href="#" class="pb-1">Amazon Devices</a>
+                <a href="#" class="pb-1">Amazon Science</a><br>
+            </ul>
+            <ul class="flex flex-col text-sm">
+                <a href="#" class="font-bold pb-3">Get to Know Us</a>
+                <a href="#" class="pb-1">Careers</a>
+                <a href="#" class="pb-1">Blog</a>
+                <a href="#" class="pb-1">About Amazon</a>
+                <a href="#" class="pb-1">Investor Relations</a>
+                <a href="#" class="pb-1">Amazon Devices</a>
+                <a href="#" class="pb-1">Amazon Science</a><br>
+            </ul>
+            <ul class="flex flex-col text-sm">
+                <a href="#" class="font-bold pb-3">Get to Know Us</a>
+                <a href="#" class="pb-1">Careers</a>
+                <a href="#" class="pb-1">Blog</a>
+                <a href="#" class="pb-1">About Amazon</a>
+                <a href="#" class="pb-1">Investor Relations</a>
+                <a href="#" class="pb-1">Amazon Devices</a>
+                <a href="#" class="pb-1">Amazon Science</a><br>
+            </ul>
+            <ul class="flex flex-col text-sm">
+                <a href="#" class="font-bold pb-3">Get to Know Us</a>
+                <a href="#" class="pb-1">Careers</a>
+                <a href="#" class="pb-1">Blog</a>
+                <a href="#" class="pb-1">About Amazon</a>
+                <a href="#" class="pb-1">Investor Relations</a>
+                <a href="#" class="pb-1">Amazon Devices</a>
+                <a href="#" class="pb-1">Amazon Science</a><br>
+            </ul>
+        </div>
+        <div class="bg-gray-900 h-[80px] flex items-center justify-center border-t border-gray-700">
+            <img src="assets/amazon_logo.png" alt="" class="object-cover h-full">
+        </div>
+        <div class="bg-gray-900 pb-8">
+            <div class="flex md:flex-row flex-col items-center justify-center text-sm text-white">
+                <a href="#">Conditions of Use &nbsp;&nbsp;&nbsp;</a>
+                <a href="#">Privacy Notice &nbsp;&nbsp;&nbsp;</a>
+                <a href="#">Customer Health Data Privacy Disclosure &nbsp;&nbsp;&nbsp;</a>
+                <a href="#">Your Ads Privacy Choices &nbsp;&nbsp;&nbsp;</a>
+            </div>
+            <div class="text-white text-sm flex items-center justify-center">
+                <p>© 1996-2024, Amazon.com, Inc. or its affiliates</p>
+            </div>
+        </div>
+     </footer>
+
+    <script>
+        let scrollcontainer = document.querySelector(".gallary");
+        let backbtn = document.getElementById("backbtn");
+        let nextbtn = document.getElementById("nextbtn");
+
+        nextbtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 1200;
+        });
+
+        backbtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 1200;
+        });
+
+        function backToTop(){
+            window.scrollTo({
+                top:0,
+                left:0,
+                behavior:"smooth"
+            });
+        };
+    </script>
+</body>
+
+</html>
