@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <title>Document</title>
+    <style>
+        html {
+            overflow: -moz-scrollbars-none;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="flex w-full h-[50px] justify-between items-center px-10 tracking-[2px] fixed bg-white z-40">
+        <div>
+            <p class="text-xl"> <span class="font-semibold">BR</span> Architects</p>
+        </div>
+        <div class="md:block hidden">
+            <ul class="flex">
+                <li>Projects</li>
+                <li class="px-6">About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="w-full h-fit object-cover relative">
+            <img src="images/architect.jpg" alt="">
+            <p class="md:text-4xl text-xl absolute top-[50%] left-[40%] tracking-[2px] text-white flex items-center">
+                <span class="font-bold md:p-4 p-2 bg-[#00000093]">BR </span><span class="md:block hidden">&nbsp;Architects</span>
+            </p>
+        </div>
+        <!-- projects -->
+        <div class="p-6">
+            <p class="text-3xl py-8 border-b">Projects</p>
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 py-10">
+                <div class="relative">
+                    <img src="images/house2.jpg" alt="house2">
+                    <p class="absolute top-0 left-0 bg-black p-2 text-white">Summer</p>
+                </div>
+                <div class="relative">
+                    <img src="images/house3.jpg" alt="house2">
+                    <p class="absolute top-0 left-0 bg-black p-2 text-white">Brick House</p>
+                </div>
+                <div class="relative">
+                    <img src="images/house4.jpg" alt="house2">
+                    <p class="absolute top-0 left-0 bg-black p-2 text-white">Renovated</p>
+                </div>
+                <div class="relative">
+                    <img src="images/house5.jpg" alt="house2">
+                    <p class="absolute top-0 left-0 bg-black p-2 text-white">Barn House</p>
+                </div>
+                <div class="relative">
+                    <img src="images/house2.jpg" alt="house2">
+                    <p class="absolute top-0 left-0 bg-black p-2 text-white">Summer</p>
+                </div>
+                <div class="relative">
+                    <img src="images/house3.jpg" alt="house2">
+                    <p class="absolute top-0 left-0 bg-black p-2 text-white">Brick House</p>
+                </div>
+                <div class="relative">
+                    <img src="images/house4.jpg" alt="house2">
+                    <p class="absolute top-0 left-0 bg-black p-2 text-white">Renovated</p>
+                </div>
+                <div class="relative">
+                    <img src="images/house5.jpg" alt="house2">
+                    <p class="absolute top-0 left-0 bg-black p-2 text-white">Barn House</p>
+                </div>
+            </div>
+        </div>
+        <!-- about -->
+        <div class="px-6">
+            <p class="text-3xl py-8 border-b">About</p>
+            <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti repellendus aliquid quo
+                consequuntur suscipit, sunt placeat distinctio. Autem quo, dolores nobis rerum et natus error laborum
+                modi ipsa nam veniam optio perspiciatis est fugiat corrupti id maxime obcaecati recusandae neque saepe
+                excepturi blanditiis fugit? Unde neque error eligendi voluptate omnis sunt animi tempore nisi
+                consequatur adipisci iure accusamus asperiores, provident pariatur officia harum ratione in quis dolores
+                quaerat maxime at laboriosam rerum iste! Itaque, consequatur ipsam quaerat perferendis vel deleniti
+                illum eveniet, iusto cumque asperiores architecto aperiam facilis quasi est dolores? Cupiditate quo
+                quia, fugit qui repellendus ut consequuntur pariatur!</p>
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 py-10">
+                <div>
+                    <img src="images/team2.jpg" alt="team1">
+                    <div>
+                        <p class="text-2xl pt-4">John Doe</p>
+                        <p class="py-4 text-gray-500">CEO & Founder</p>
+                        <p class="pb-4">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales
+                            pellentesque elementum.</p>
+                        <button class="bg-gray-200 p-1 w-full">Contact</button>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/team1.jpg" alt="team1">
+                    <div>
+                        <p class="text-2xl pt-4">Jane Doe</p>
+                        <p class="py-4 text-gray-500">Architect</p>
+                        <p class="pb-4">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales
+                            pellentesque elementum.</p>
+                        <button class="bg-gray-200 p-1 w-full">Contact</button>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/team3.jpg" alt="team1">
+                    <div>
+                        <p class="text-2xl pt-4">Mike Ross</p>
+                        <p class="py-4 text-gray-500">Architect</p>
+                        <p class="pb-4">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales
+                            pellentesque elementum.</p>
+                        <button class="bg-gray-200 p-1 w-full">Contact</button>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/team4.jpg" alt="team1">
+                    <div>
+                        <p class="text-2xl pt-4">Dan Star</p>
+                        <p class="py-4 text-gray-500">Architect</p>
+                        <p class="pb-4">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales
+                            pellentesque elementum.</p>
+                        <button class="bg-gray-200 p-1 w-full">Contact</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- contact -->
+        <div class="px-6 flex flex-col">
+            <p class="text-3xl py-8 border-b">Contact</p>
+            <p class="py-4">Lets get in touch and talk about your next project</p>
+            <input type="text" placeholder="Name"><br>
+            <input type="text" placeholder="Email"><br>
+            <input type="text" placeholder="Subject"><br>
+            <input type="text" placeholder="Comment"><br>
+            <button class="bg-black text-white w-fit px-4 py-2">SEND MESSAGE</button>
+        </div>
+
+        <!-- map -->
+        <div class="px-6 py-4">
+            <img src="images/map.jpg" alt="" class="object-scale-down">
+        </div>
+
+        <!-- footer -->
+        <div class="w-full px-6 py-2">
+            <p class="bg-black text-white text-center p-8">Powerd by xyz</p>
+        </div>
+    </main>
+</body>
+
+</html>
